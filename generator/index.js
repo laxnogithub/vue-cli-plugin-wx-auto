@@ -4,7 +4,7 @@
  * @Autor: lax
  * @Date: 2020-10-10 14:01:01
  * @LastEditors: lax
- * @LastEditTime: 2020-10-10 16:51:10
+ * @LastEditTime: 2020-10-10 17:02:36
  */
 const wxHandlerName = "wxsdk-handler";
 const fs = require('fs');
@@ -58,7 +58,6 @@ module.exports.hooks = (api) => {
   api.afterInvoke(() => { 
     const contentMain = fs.readFileSync(api.resolve(api.entryFile), { encoding: 'utf-8' })
     const lines = contentMain.split(/\r?\n/g)
-
     const renderIndex = lines.findIndex(line => line.match(/wxHandler/))
     lines[renderIndex] += `${EOL} Vue.use(wxHandler, {
       configFile: require("./../wx.js"),

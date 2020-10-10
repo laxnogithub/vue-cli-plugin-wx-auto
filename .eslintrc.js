@@ -4,7 +4,7 @@
  * @Autor: lax
  * @Date: 2020-10-10 16:14:57
  * @LastEditors: lax
- * @LastEditTime: 2020-10-10 16:17:40
+ * @LastEditTime: 2020-10-10 17:01:28
  */
 module.exports = {
 	root: true,
@@ -13,7 +13,6 @@ module.exports = {
 	},
 	extends: ["eslint:recommended"],
 	parserOptions: {
-		parser: "babel-eslint",
 		sourceType: "module",
 	},
 	rules: {
