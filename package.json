@@ -1,0 +1,13 @@
+{
+  "name": "vue-cli-plugin-wx-auto",
+  "version": "1.0.0",
+  "main": "./index.js",
+  "scripts": {
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.1.1"
+  }
+}
