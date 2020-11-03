@@ -4,7 +4,7 @@
  * @Autor: lax
  * @Date: 2020-10-10 14:01:01
  * @LastEditors: lax
- * @LastEditTime: 2020-10-12 09:24:01
+ * @LastEditTime: 2020-11-03 22:57:37
  */
 const wxHandlerName = "wxsdk-handler";
 const fs = require("fs");
@@ -29,7 +29,7 @@ function injectApp(api) {
 
 function injectDependencies(api) {
 	const dependencies = {};
-	dependencies[wxHandlerName] = "^1.0.3";
+	dependencies[wxHandlerName] = "^1.1.1";
 
 	api.extendPackage({ dependencies });
 }
